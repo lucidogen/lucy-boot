@@ -1,0 +1,29 @@
+body {
+  padding:20px 5px;
+  background:black;
+  overflow:scroll;
+}
+.scene {
+  border-radius:6px;
+  float:left;
+  width: 240px;
+  height: 135px;
+  background-size:240px 135px;
+  font-size:15px;
+  font-weight:bold;
+  border:1px solid #444;
+  margin:3px;
+}
+
+.scene:hover p {
+  background:white;
+}
+
+
+.scene p {
+  border-top-left-radius:5px;
+  border-top-right-radius:5px;
+  margin:0;
+  padding:3px 10px;
+  background:rgba(255,255,255,0.65) 
+}

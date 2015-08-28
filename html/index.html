@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Lucidity</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="html/style.css">
+</head>
+
+<body>
+  <div id='dialog' style='display:none'>
+    <div class='title' id='dialog-title'>Save Scene</div>
+    <div class='wrap'>
+      <p id='dialog-message'>Please enter name</p>
+      <form action='javascript:Lucy.app.btnOK()' id='dialog-form'>
+        <p><input id='dialog-fld' name='prompt' value='crazy ball'></p>
+      </form>
+      <div class='btns'>
+        <a id='dialog-btn-ok' class='btn btn-primary right' onclick='Lucy.app.btnOK()'>OK</a>
+        <a id='dialog-btn-cancel' class='btn btn-cancel' onclick='Lucy.app.btnCancel()'>Cancel</a>
+      </div>
+    </div>
+  </div>
+  <script src='lucy/index.js'></script>
+</body>
+
+</html>
+
