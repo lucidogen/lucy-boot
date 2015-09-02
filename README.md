@@ -1,4 +1,4 @@
-# Lucidity Boot
+# Lucy Boot [![Build Status](https://travis-ci.org/lucidogen/lucy-boot.svg)](https://travis-ci.org/lucidogen/lucy-boot)
 
 Part of [Lucidity](http://lucidity.io) project.
 
@@ -53,4 +53,4 @@ Add unit tests (when possible) for any new or changed functionality.
 
 ## Release History
 
-  * 0.1.0 () Initial release.
+  * 0.1.0 (2015-09-02) Initial release.
