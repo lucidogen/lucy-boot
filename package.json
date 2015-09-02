@@ -9,21 +9,26 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@bitbucket.org:lucidogen/lucy-boot.git"
+    "url": "git+ssh://git@github.com/lucidogen/lucy-boot.git"
   },
   "keywords": [
     "application",
     "multimedia",
-    "runtime"
+    "runtime",
+    "boot"
   ],
   "author": "Gaspard Bucher <gaspard@lucidogen.io> (http://lucidogen.io/)",
   "bugs": {
-    "url": "https://bitbucket.org/lucidogen/lucy-boot/issues"
+    "url": "https://github.com/lucidogen/lucy-boot/issues"
   },
   "devDependencies": {
     "chai": "^2.3.0",
     "mocha": "~1.16.2"
   },
   "dependencies": {
+  },
+  "homepage": "https://github.com/lucidogen/lucy-boot#readme",
+  "directories": {
+    "test": "test"
   }
 }
