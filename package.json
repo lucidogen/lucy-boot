@@ -25,7 +25,9 @@
     "chai": "^2.3.0",
     "mocha": "~1.16.2"
   },
-  "dependencies": {},
+  "dependencies": {
+    "jquery": "^2.1.4"
+  },
   "homepage": "https://github.com/lucidogen/lucy-boot#readme",
   "directories": {
     "test": "test"

@@ -18,18 +18,19 @@ const statPath = function(p) {
   return false
 }        
 
-const live = require('lucy-live')
-
-let init = false
-live.path('./gallery.css', function() {
-  if (init) {
-    console.log("PATH CHANGED")
-    require('remote').getCurrentWindow().restart();
-  }
-  init = true
-})
-
-live.watch('.')
+// Only used in development
+// const live = require('lucy-live')
+// 
+// let init = false
+// live.path('./gallery.css', function() {
+//   if (init) {
+//     console.log("PATH CHANGED")
+//     require('remote').getCurrentWindow().restart();
+//   }
+//   init = true
+// })
+// 
+// live.watch('.')
 
 Gallery.prototype.load = function(p) {
   let mainWindow = remote.getGlobal('mainWindow')
@@ -56,7 +57,8 @@ Gallery.prototype.make = function() {
 
     folders.forEach(function(f) {
     if (statPath(path.join(spath, f, 'snapshot.png'))) {
-        let src = `lucy/scene/${f}/snapshot.png`
+        let src = `${ spath }/${f}/snapshot.png`
+        console.log ( `src for ${ f } is '${ src }'.` )
         let div = `
           <div class='scene' data-name='${f}' onclick="Lucy.gallery.load('${spath}/${f}')" style='background-image:url(${src})'>
             <p class='title'>${decodeURIComponent(f).replace('-', ' ')}</p>
@@ -68,7 +70,10 @@ Gallery.prototype.make = function() {
   })
 }
 
-let gallery  = new Gallery(__dirname + '/lucy/scene')
+let   nodeapp  = require ( 'remote' ).require ( 'app' )
+const rootpath = nodeapp.getAppPath ()
+
+let gallery  = new Gallery ( `${ rootpath }/gallery` )
 Lucy.gallery = gallery
 
 gallery.reload()
