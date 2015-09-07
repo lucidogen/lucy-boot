@@ -58,7 +58,6 @@ Gallery.prototype.make = function() {
     folders.forEach(function(f) {
     if (statPath(path.join(spath, f, 'snapshot.png'))) {
         let src = `${ spath }/${f}/snapshot.png`
-        console.log ( `src for ${ f } is '${ src }'.` )
         let div = `
           <div class='scene' data-name='${f}' onclick="Lucy.gallery.load('${spath}/${f}')" style='background-image:url(${src})'>
             <p class='title'>${decodeURIComponent(f).replace('-', ' ')}</p>
