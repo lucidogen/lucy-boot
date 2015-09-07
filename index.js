@@ -10,8 +10,4 @@
 const Booter      = require ( './lib/Booter' )
 const booter      = new Booter ()
 
-const boot = function ()
-{ booter.apply ( booter, arguments )
-}
-
 module.exports = booter

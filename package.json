@@ -26,6 +26,7 @@
     "mocha": "~1.16.2"
   },
   "dependencies": {
+    "cpr": "^0.4.1",
     "jquery": "^2.1.4"
   },
   "homepage": "https://github.com/lucidogen/lucy-boot#readme",
