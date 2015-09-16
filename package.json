@@ -2,7 +2,7 @@
   "name": "lucy-boot",
   "version": "0.1.0",
   "description": "Bootstrap Lucidity, an electron application.",
-  "main": "index.js",
+  "main": "lib/index.js",
   "license": "MIT",
   "scripts": {
     "test": "make test"

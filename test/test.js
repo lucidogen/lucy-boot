@@ -7,7 +7,7 @@ const Booter = require('../lib/Booter')
 describe
 ( 'booter'
 , function ()
-  { let booter = require ( '../index' )
+  { let booter = require ( '../lib/index' )
     
     it
     ( 'should be a Booter'
