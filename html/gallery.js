@@ -34,7 +34,7 @@ const statPath = function(p) {
 
 Gallery.prototype.load = function(p) {
   let mainWindow = remote.getGlobal('mainWindow')
-  // FIXME: Should we need to choose between 'edit' and 'load' ?
+  // FIXME: We need a way to choose between 'edit' and 'load'.
   mainWindow.webContents.executeJavaScript(`Lucy.app.edit('${p}')`)
   // mainWindow.webContents.executeJavaScript(`Lucy.app.load('${p}')`)
   mainWindow.show()

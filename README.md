@@ -12,8 +12,6 @@ Currently, there are no customization settings.
 
 ## Installation
 
-Currently only works with [**io.js**](https://iojs.org).
-
   ```Shell
   npm install lucy-boot --save
   ```
@@ -53,4 +51,5 @@ Add unit tests (when possible) for any new or changed functionality.
 
 ## Release History
 
+  * 0.1.1 (2015-09-22) Fixed pipe errors, working gallery.
   * 0.1.0 (2015-09-02) Initial release.
