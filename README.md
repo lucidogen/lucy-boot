@@ -12,7 +12,7 @@ Currently, there are no customization settings.
 
 ## Installation
 
-  ```Shell
+  ```sh
   npm install lucy-boot --save
   ```
 
@@ -20,26 +20,26 @@ Currently, there are no customization settings.
 
 Once installed, create an 'index.js' file in the root directory with:
 
-  ```Javascript
+  ```js
   require ( 'lucy-boot' )
   .boot ()
   ```
 
 Now you can start Lucidity from within the root directory:
 
-  ```Shell
+  ```sh
   electron .
   ```
 
 Note: you can install electron with
 
-  ```Shell
+  ```sh
   npm install -g electron-prebuilt
   ```
 
 ## Tests
 
-  ```Shell
+  ```sh
   npm test
   ```
 
